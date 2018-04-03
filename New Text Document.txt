@@ -1,0 +1,19 @@
+function createMail(name){
+  this.name=name;
+}
+
+
+
+
+
+document.getElementById("add").addEventListener("click",function(){
+  var inptVal=document.getElementById("nume").value;
+  
+  
+  var Mail=new createMail(inptVal);
+  
+  
+  
+  console.log(Mail.name)
+  
+})

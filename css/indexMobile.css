@@ -1,0 +1,332 @@
+   #menuToggle input{
+      display: none;
+    }
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+   #menuToggle input{
+      display: block;
+    }
+    .logo a{
+      font-size: 60px;
+      padding-right: 5px;
+    }
+    .logo{
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+    .star,.cart{
+      padding: 40px;
+      }
+    .star,.cart span{
+      font-size: 25px;
+    }
+    .buttons #btn{
+      padding: 50px;
+      font-size: 50px;
+    }
+    .buttons input{
+      display: none;
+    }
+    .buttons{
+      margin: 0 auto;
+    }
+
+   .carusel-text{
+    position:absolute;
+    left:20%;
+   }
+   .carusel-title span{
+    font-size: 45px;
+   }
+   .carusel-content-text{
+    font-size:25px;
+   }
+   .carusel-icons{
+    margin-top: 55px;
+   }
+
+
+/* hamburger Menu */
+  a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  padding-left: 5px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ *  hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -270px;
+  padding: 50px;
+  margin-top: 10px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  display:flex;
+  flex-direction: column; 
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+
+.slide-text span{
+  font-size: 30px;
+  font-weight: 600;
+}
+.slide-text .icons-price{
+  font-size: 20px;
+  font-weight: 300;
+}
+.min-container{
+  margin-top: 5px;
+}
+.homepage .first-row .img-first-row-container img{
+    height: 50%;
+    width: 60%;
+}
+
+
+.bot-second-row-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bot-second-row-container .img-second-row-container{
+  flex-basis: 45%;
+}
+.img-second-row-container img{
+  padding-top: 10%;
+  padding-right: 5%;
+}
+.onSaleIcon{
+    position: absolute;
+    right: 20%;
+    top: 25%
+}
+.second-row .top-second-row, .third-row .top-third-row{
+  margin-bottom: -30px;
+}
+#lastSecond{
+  margin-right: 33%;
+}
+
+
+
+.bot-third-row-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.bot-third-row-container .img-third-row-container{
+  flex-basis: 45%;
+}
+
+.img-third-row-container img{
+  padding-top: 10%;
+  padding-right: 5%;
+}
+.onSaleIcon{
+    position: absolute;
+    right: 20%;
+    top: 25%
+}
+#lastThird{
+  margin-right: 33%;
+}
+.second-row-title,.third-row-title h3{
+  font-size: 1.6em;
+}
+.second-row-button button{
+  font-size: 1.3em;
+  padding:9px 16px;
+}
+.third-row-button button{
+  font-size: 1.3em;
+  padding:9px 16px;
+}
+
+
+.fourth-row .shipping{
+  display: none;
+}
+.fourth-row .testimonals{
+  width: 40%;
+  font-size:1.3em;
+}
+.fourth-row .blognews{
+  width: 60%;
+  font-size:1.3em;
+}
+.fourth-row .fourth-row-container {
+  padding-bottom: 1%;
+}
+
+.twitWidget{
+  display: none;
+}
+.top-header, .bot-header, .bot-header .icons, .carusel-text, .first-row, .second-row .second-row-button, .third-row .third-row-button, .fourth-row, .txtWidget {
+    display: flex;
+    justify-content: center;
+}
+.footer .footer-container .txtWidget{
+  flex-basis: 50%;
+  flex-direction:column;
+
+}
+.txtWidget p{
+  float: left;
+}
+.top-header, .bot-header, .bot-header .icons, .carusel-text, .first-row, .second-row .second-row-button, .third-row .third-row-button, .fourth-row, .flickWIdget {
+    display: flex;
+    justify-content: center;
+}
+.footer .footer-container .flickWidget{
+  flex-basis: 50%;
+  flex-direction:column;
+}
+.flickWIdget p{
+  padding-bottom: 0px;
+}
+
+#formContainer{
+  width:49%;
+}
+.fourth-row .date-box{
+  width: 18%;
+}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 960px) {
+
+
+
+
+}
+
+
+
+
+
+
+.footer-container{
+  display: flex;
+  align-items: flex-start;
+}
+#formContainer{
+  z-index: 1;
+}
+ .img-first-row-container img{
+  height:70%;
+  width:70%;
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/products.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+  <link rel="stylesheet" type="text/css" href="scss/share.css">
+  <link rel="stylesheet" type="text/css" href="css/indexMobile.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/product.js"></script>
+  <script type="text/javascript" src="js/lightbox.js"></script>
+  <script type="text/javascript" src="js/share.js"></script>
+</head>
+<body>
+	<div class="header">
+      <div class="top-header">
+        <div class="logo"><a href="index.html">FOOSESHOES</a></div>
+        <div class="buttons">
+          <input type="text" placeholder="Search..."  list="items">
+            <datalist id="items" class="hidden">
+              
+            </datalist>
+          <button id="btn">Login or Reigster</button>
+              <div id="formContainer">
+                  <form >
+                  <div class="rows">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                  </div>
+                  <div class="rows">
+                    <div class="col-25">
+                      <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                  </div>
+                  <div class="rows">
+                    <div class="col-25">
+                      <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <div class="rows">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    <div class="bot-header">
+      <nav role="navigation">
+      <div class="list-elements" id="menuToggle">
+        <input type="checkbox" id="menuInpt">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      </nav>
+      <div class="icons">
+        <div class="star">
+          <span class="fa fa-star-o">
+              <i class="fa fa-square-o fa-stack-3x"></i>
+          </span>
+        </div>
+        <div class="cart">
+          <span class="fa fa-shopping-cart">
+              <i class="fa fa-square-o fa-stack-3x"></i>
+          </span>
+        </div>  
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="main-slider">
+      <div class="top-slider-products">
+        <img class="top-background " src="images/productpage.png" style="width:100%;">
+        	<div class="carusel-text-products" id="cars-txt-prod">
+              <div class="title">
+            		<div class="price-box">
+            			<img src="images/price.png">
+            		</div>
+                <div class="carusel-title">
+                			<span>Pink Shoes</span><br>
+                			<span>2013 Collection</span>
+            		</div>
+              </div>
+            		<div class="carusel-content-text">
+            			Nunc non fermentum.Sed ut ante
+            			eget leo tempor consquiat sit amet eu orci.<br>
+            			DOnec dignisssim du taglet..
+            		</div>
+        		<div class="carusel-icons">
+        			<div class="icon-box">
+        				<i class="fa fa-eye"></i>
+        			</div>
+        			<div class="icon-box">
+        				<i class="fa fa-star-o"></i>
+        			</div>
+        			<div class="icon-box">
+        				<i class="fa fa-share-square-o"></i>
+        			</div>
+        			<div class="icon-box">
+        				<i class="fa fa-shopping-cart"></i>
+        			</div>
+        		</div>
+       	    </div>
+      </div>
+    </div> 
+    <div class="homepage">
+
+        
+    <div class="sort-container">
+      <div class="title-sort">
+        <span>Shop By</span>
+      </div>
+      <div class="select-brands select">
+          <select class="sel">
+            <option selected disabled>Brands</option>
+            <option value="volvo">Even&Odd</option>
+            <option value="volvo">Prada</option>
+            <option value="volvo">Casadei</option>
+          </select>      
+      </div>
+      <div class="select-categories select">
+          <select class="sel">
+            <option selected disabled>Categories</option>
+            <option value="volvo">Men</option>
+            <option value="volvo">Kids</option>
+            <option value="volvo">Women</option>
+          </select>      
+      </div>
+      <div class="select-price select">
+          <select class="sel">
+            <option selected disabled>Price</option>
+            <option value="volvo">Highest</option>
+            <option value="volvo">Lowest</option>
+
+          </select>      
+      </div>   
+    </div>
+    	<div class="first-row">
+
+    		<div class="img-first-row-container">
+    			<img class="img-first-row" src="images/onsale.png">
+    		</div>
+
+    		<div class="img-first-row-container">
+    			<img class="img-first-row" src="images/specialoffers.png">
+    		</div>
+
+    		<div class="img-first-row-container">
+    			<img class="img-first-row" src="images/musthave.png">
+    		</div>
+
+    	</div>
+
+      <div class="viewAs">
+        <div class="viewAs-container">
+          <div class="left">
+            <div class="title-product">All Products</div>
+            <div class="subtitle-product">Home>All Products</div>
+          </div>
+          <div class="right">
+            <div>View As</div>
+            <div><button id="row" class="order-div"><span class="glyphicon glyphicon-th-large"></span></button></div>
+            <div><button class="order-div" id="column"><span class="glyphicon glyphicon-th-list" id="column"></button></span></div>
+            <div>
+              <select class="sortAlphabetically">
+                <option>Sort alphabetically</option>
+              </select>   
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+    	<div class="second-row" id="second-mobile">
+	    	<div class="bot-second-row-container" id="second-row-container">
+	    		<div class="img-second-row-container">
+	    			<img style="height:80%;width:70%" class="img-first-row" src="images/1.png">
+	    			<hr class="hrLine">
+	    			<div class="banner-price"><p>$145.99</p></div>
+            <div class="prodTitle">Even&Odd</div>
+            <div class="btns-icons">
+              <button><i class="fa fa-eye"></i></button>
+              <button><i class="fa fa-star-o"></i></button>
+              <button><i class="fa fa-share-square-o"></i></button>
+              <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+
+	    		<div class="img-second-row-container">
+	    			<img style="height:80%;width:70%" class="img-first-row" src="images/2.png">
+	    			<hr class="hrLine">
+            <div class="onSaleIcon" id="saleIcon" ><img src="images/onsaleicon.png"></div>
+	    			<div class="banner-price"><p>$145.99</p></div>
+            <div class="prodTitle">Even&Odd</div>
+            <div class="btns-icons">
+              <button><i class="fa fa-eye"></i></button>
+              <button><i class="fa fa-star-o"></i></button>
+              <button><i class="fa fa-share-square-o"></i></button>
+              <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+	    		</div>
+
+	    		<div class="img-second-row-container" id="lastSecond">
+	    			<img style="height:80%;width:70%" class="img-first-row" src="images/3.png">
+	    			<hr class="hrLine">
+	    			<div class="banner-price"><p>$145.99</p></div>
+            <div class="prodTitle">Buffalo Decollete</div>
+            <div class="btns-icons">
+             <button><i class="fa fa-eye"></i></button>
+              <button><i class="fa fa-star-o"></i></button>
+              <button><i class="fa fa-share-square-o"></i></button>
+              <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+	    		</div>
+	    	</div>
+
+    	</div>
+
+        
+
+    	<div class="third-row" id="third-mobile">
+        <div class="bot-third-row-container" id="third-row-container">
+          <div class="img-third-row-container">
+            <img style="height:80%;width:70%" class="img-first-row" src="images/4.png">
+            <hr class="hrLine">
+            <div class="banner-price"><p>$145.99</p></div>
+            <div class="prodTitle">Even&Odd</div>
+            <div class="btns-icons">
+              <button><i class="fa fa-eye"></i></button>
+              <button><i class="fa fa-star-o"></i></button>
+              <button><i class="fa fa-share-square-o"></i></button>
+              <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+
+          <div class="img-third-row-container">
+            <img style="height:80%;width:70%" class="img-first-row" src="images/5.png">
+            <hr class="hrLine">
+            <div class="banner-price"><p>$145.99</p></div>
+            <div class="prodTitle">Even&Odd</div>
+            <div class="btns-icons">
+              <button><i class="fa fa-eye"></i></button>
+              <button><i class="fa fa-star-o"></i></button>
+              <button><i class="fa fa-share-square-o"></i></button>
+              <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+
+          <div class="img-third-row-container" id="lastThird">
+            <img style="height:80%;width:70%" class="img-first-row" src="images/6.png">
+            <hr class="hrLine">
+            <div class="onSaleIcon" id="saleIcon"><img src="images/outofstock.png"></div>
+            <div class="banner-price"><p>$145.99</p></div>
+            <div class="prodTitle">Buffalo Decollete</div>
+            <div class="btns-icons">
+             <button><i class="fa fa-eye"></i></button>
+              <button><i class="fa fa-star-o"></i></button>
+              <button><i class="fa fa-share-square-o"></i></button>
+              <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fourth-row">
+       <div class="fourth-row-container"> 
+        <div class="shipping">
+          <p><b>FREE SHIPPING</b></p>
+          Vivamus metus turpis,bibendum vitae eusimod vel, vulputate vel nibh
+          .Class aptent taciti soclosqu ad litora torquent per conubia nostra,
+          per inceptos himenaos.Donec era sem
+        </div>
+        <div class="testimonals">
+          <p><b>TESTIMONIALS</b></p>
+          vel,vulputate vel nibh.Class aptent taciti sociosqu ad litora torquent
+          per conubia nostra,per inceptos himenaes.Donec erat sem,vehicula id 
+          dictum sit[...]
+          <p><i>-John Doe-</i></p>
+        </div>
+        <div class="blognews">
+          <p><b>BLOG NEWS</b></p>
+          <div class="blog1">
+            <div class="date-box">April 01</div>
+            <div class="text-box"><b>Nice and clean.The best of your blog!
+            </b><span  class="js-fade fade-in is-paused testimonial">Vivamus metus turpis,bibendum vitae vel,vulpulate vel</span></div>
+          </div>
+          <div class="blog2">
+            <div class="date-box">April 01</div>
+            <div class="text-box"><b>What an eCOmerce blog!
+            </b><span  class="js-fade fade-in is-paused testimonial">Vivamus metus turpis,bibendum vitae vel,vulpulate vel</span></div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+          <div class="txtWidget">
+              <p>TEXT WIDGET</p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </div>
+          <div class="twitWidget">
+              <p>TWITTER WIDGET</p>
+              <i class="twitterChange">@ectafustero</i> Why thank you.Your work looks awesome by the way!<i>@treeenlody</i>
+              <p class="dayTwit">21 days ago</p>
+              <i class="twitterChange">@ectafustero</i> Why thank you.Your work looks awesome by the way!<i>@treeenlody</i>
+              <p class="dayTwit">19 days ago</p>
+          </div>
+          <div class="flickWIdget">
+          <p>FLICKR WIDGET</p>
+            <div class="flick-first-row">
+              <div class="img-flick">
+                  <a href="images/1.png" style="width:100%" data-lightbox="gallery"><img src="images/1-thumb.png" style="width:64px;height:48px"></a>
+              </div>
+              <div class="img-flick">
+                  <a href="images/2.png" style="width:100%" data-lightbox="gallery"><img src="images/2-thumb.png" style="width:64px;height:48px"></a>
+              </div>
+              <div class="img-flick">
+                  <a href="images/3.png" style="width:100%" data-lightbox="gallery"><img src="images/3-thumb.png" style="width:64px;height:48px"></a>
+              </div>
+            </div>
+            <div class="flick-second-row"> 
+              <div class="img-flick">
+                  <a href="images/4.png" style="width:100%" data-lightbox="gallery"><img src="images/4-thumb.png" style="width:64px;height:48px"></a>
+              </div>
+              <div class="img-flick">
+                  <a href="images/5.png" style="width:100%" data-lightbox="gallery"><img src="images/5-thumb.png" style="width:64px;height:48px"></a>
+              </div>
+              <div class="img-flick">
+                  <a href="images/6.png" style="width:100%" data-lightbox="gallery"><img src="images/6-thumb.png" style="width:64px;height:48px"></a>
+              </div>
+            </div>   
+          </div>
+        </div>
+     </div>
+      <div class="bot-footer">
+          <div class="bot-footer-container">
+            <div class="footer-inpt">
+              <input type="text"  placeholder="Enter email for newsletter" id="inptEmail">
+              <span class="input-icon" id="onSubmit"><span class="fa fa-angle-right"></span></span>
+              <div>
+                  <p id="mailErr">Please enter a valid mail!</p>
+                  <p id="mailRepeat">Mail already registered</p>
+                  <p id="mailSucces">Mail succesfuly registered</p>
+              </div>
+            </div>
+            <div class="buttons-inpt">
+              <button><i class="fa fa-facebook-f"></i></button>
+              <button><i class="fa fa-twitter"></i></button>
+              <button><i class="fa fa-google-plus"></i></button>
+              <button><i class="fa fa-linkedin"></i></button>
+              <button><i class="fa fa-flickr"></i></button>
+            </div>
+          </div>
+      </div>
+    </div>
+   
+
+
+</body>
+</html>
+</body>
+</html>
